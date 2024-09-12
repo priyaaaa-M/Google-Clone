@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="asscet/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header part -->
+    <header>
+        <nav class="navbar">
+            
+            <ul>
+                <li><a class="link" href="https://mail.google.com">Gmail</a></li>
+                <li><a class="link" href="https://images.google.com">Images</a></li>
+                <li class="circle-shadow"><a class="menu-icon" href="#" id="forchange">
+                    <i class="fa-solid fa-bars"></i></a></li>
+                <li class="circle-shadow"><a class="user-icon" href="#"><span></span></a></li>
+                  
+            </ul>
+            <img src="asscet/moon.png" alt="moon icon"  id="moon">
+        </nav>
+    </header>
+
+    <!-- text typing animation -->
+    <div class="nameAnimation">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div>
+
+    <!-- content section -->
+    <section class="content-section">
+        <div class="content-Wrapper">
+            <img class="logo-img" src="asscet/logo.jpg" alt="Google Logo Images">
+            <div class="Search-bar">
+
+                <div class="search">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#666666">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                    </i>
+                    <input class="search-input" placeholder="Search Google or type a URL" autocomplete="off"
+                        id="input-box" type="text">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#7b81a7">
+                            <path
+                                d="M480.12-346Q411-346 362.5-395T314-513v-234q0-69.17 48.38-117.58Q410.76-913 479.88-913t117.62 48.42Q646-816.17 646-747v234q0 69-48.38 118t-117.5 49ZM480-630ZM420-46v-126q-127-16-207.5-114.01T132-513h121q0 95 66.49 161 66.48 66 160.82 66 94.33 0 160.51-66.14Q707-418.29 707-513h121q0 129.99-81 227.49Q666-188 540-172v126H420Zm59.89-436q12.71 0 21.41-8.91 8.7-8.92 8.7-22.09v-234q0-12.75-8.59-21.38-8.6-8.62-21.3-8.62-12.71 0-21.41 8.62-8.7 8.63-8.7 21.38v234q0 13.17 8.59 22.09 8.6 8.91 21.3 8.91Z" />
+                        </svg>
+
+                    </i>
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#0000F5">
+                            <path
+                                d="M480-320q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-480q0-33-23.5-56.5T480-560q-33 0-56.5 23.5T400-480q0 33 23.5 56.5T480-400Zm0-80ZM200-120q-33 0-56.5-23.5T120-200v-160h80v160h160v80H200Zm400 0v-80h160v-160h80v160q0 33-23.5 56.5T760-120H600ZM120-600v-160q0-33 23.5-56.5T200-840h160v80H200v160h-80Zm640 0v-160H600v-80h160q33 0 56.5 23.5T840-760v160h-80Z" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="result-box"></div> <!-- Suggestions  part -->
+
+            </div>
+            <div class="searchbtn">
+                <button class="google-search-btn">Google Search</button>
+                <button class="good-btn">I'm Feeling Good</button>
+            </div>
+            <div class="languageBar">
+                <span>Google offered in: </span>
+                <a href="#"> हिन्दी</a>
+                <a href="#"> বাংলা</a>
+                <a href="#"> తెలుగు</a>
+                <a href="#"> मराठी</a>
+                <a href="#"> தமிழ்</a>
+                <a href="#"> ગુજરાતી</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('.auto-type', {
+            strings: ['Priyanka <span class="highlight">Mandal</span>'],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

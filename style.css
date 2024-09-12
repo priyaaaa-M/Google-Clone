@@ -1,0 +1,400 @@
+
+
+
+/* Define dark theme variables */
+.dark-theme {
+  --bg-color: #181818;
+  --text-color: #ffffff;
+  --link-color: white;
+  --hover-bg-color: rgb(161, 160, 160);
+  --border-color: gray;
+  --search-bg-color: #ffffff;
+  --result-text-color: #bbbbbb;
+  --result-hover-bg-color: #9c9c9c;
+  --box-shadow-color: #ebe4e4;
+
+  --primary-color: #fbfdff; /* Change red to blue */
+  --secondary-color: #FFFF00; /* Change green to yellow */
+  --highlight-color: #82c3d3; /* Change blue to white */
+  --background-color: #121212; /* Dark background */
+  --text-color: #FFFFFF; /* Light text color */
+  --border-color: #555;
+  --input-bg: #333;
+  --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+:root {
+
+
+ /* Light Theme Colors */
+ --bg-color: #ffffff;
+ --text-color: #000000;
+ --link-color: black;
+ --hover-bg-color: rgba(0, 0, 0, 0.1);
+ --border-color: lightgray;
+ --search-bg-color: #f8f9fa;
+ --result-text-color: #868686;
+ --result-hover-bg-color: #e0e9f5;
+ --box-shadow-color: #636161;
+
+
+  --primary-color: #ec3d37; /* Default red */
+  --secondary-color: rgb(88, 173, 7); /* Default green */
+  --highlight-color: #147ace; /* Default blue */
+  --background-color: #FFFFFF; /* Default light background */
+  --text-color: #000000; /* Default text color */
+  --border-color: lightgray;
+  --input-bg: #FFF;
+  --hover-bg: rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+
+
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.circle-shadow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.circle-shadow:hover {
+  background-color: var(--hover-bg-color);
+}
+
+/* Header Styles */
+header {
+  height: 60px;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+
+.navbar ul li a {
+  color: var(--link-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  font-size: 18px;
+  color: #000000;
+  
+}
+
+
+.user-icon {
+  background-image: url("asscet/userimg.png"); 
+  background-size: cover;  
+  background-position: center; 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; 
+}
+
+/* Text Typing Animation Styles */
+.nameAnimation {
+  color: #ec3d37;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.nameAnimation h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.nameAnimation h1 span {
+  color: var(--secondary-color);
+}
+
+.nameAnimation h1 span.highlight {
+  color: var(--highlight-color);
+}
+
+/* Content Section Styles */
+.content-section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-Wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.logo-img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.Search-bar {
+  border: 1px solid var(--border-color);
+    border-radius: 30px;
+    width: 600px;
+    max-width: 100%; /* Added for responsiveness */
+}
+
+
+.Search-bar .search {
+  width: 100%;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: white;
+}
+
+
+.Search-bar:hover {
+  box-shadow: 0 0 4px var(--box-shadow-color);
+  
+}
+
+.Search-bar i {
+  font-size: 18px;
+  color: gray;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.Search-bar input {                           
+  flex-grow: 1;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.Search-bar button {
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: black;
+  background-color: #F2F3F4;
+}
+
+/* Search Button Styles */
+.searchbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.searchbtn :hover{
+     box-shadow: #bdb6b6;
+    
+}
+
+.google-search-btn, .good-btn {
+  padding: 10px 20px;
+  background-color: var(--search-bg-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.google-search-btn {
+  margin-left: 0;
+}
+.google-search-btn :hover{
+  box-shadow: 0 0 4px var(--box-shadow-color);
+
+}
+
+/* Language Bar Styles */
+
+
+.languageBar {
+  margin-top: 20px;
+  font-size: 11pt;
+  text-align: center;
+ 
+}
+
+.languageBar a {
+  margin-left: 5px;
+  color: rgb(34, 163, 223);
+  font-size: 0.9rem;
+}
+
+.languageBar a:hover {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+/* Result Box Styles */
+.result-box {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.result-box ul {
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 10px 9px;
+  cursor: pointer;
+  color: var(--result-text-color);
+}
+
+.result-box ul li:hover {
+  background-color: var(--result-hover-bg-color);
+  color: black;
+}
+
+
+/* dark mood */
+/* CSS for the nav bar to align the items */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /* Vertically aligns the items */
+  padding: 10px; /* Optional: Add some padding */
+}
+
+/* Ensure that ul also uses flex to arrange the list items in one line */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style each list item (li) */
+.navbar ul li {
+  margin: 0 10px; /* Optional: Add space between the items */
+}
+
+/* Optional: Adjust the moon icon */
+#moon {
+  width: 30px; /* Adjust the size of the moon image */
+  height: 30px;
+  margin-left: 20px; /* Optional: Add space between the ul and the moon */
+  cursor: pointer; /* Makes the moon icon clickable */
+  border-radius: 50px;
+
+  
+}
+#moon:hover {
+   
+  background-color: var(--hover-bg-color);
+
+  border-radius: black;
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    justify-content: space-between;
+  }
+
+  .content-Wrapper {
+    padding: 20px;
+  }
+
+  .Search-bar {
+    width: 90%;
+  }
+
+  .google-search-btn, .good-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nameAnimation h1 {
+    font-size: 28px;
+  }
+
+  .Search-bar {
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 250px;
+  }
+
+  .google-search-btn, .good-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
